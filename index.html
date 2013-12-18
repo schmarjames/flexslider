@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/slide_styles.css" type="text/css" rel="stylesheet">
+     </head>
+    <body>
+    	<div id="title">
+    		<h3>Flex Slider</h3>
+			<h3>By: Schmar James</h3>
+    	</div>
+    	
+		<div id="container"><!-- adbelt wrapper -->
+			<div id="adbelt">
+				<div id="slide1">
+						<div class="ad"><img src="images/slide1.jpg"></div>
+						<div class="ad"><img src="images/slide2.jpg"></div>
+						<div class="ad"><img src="images/slide3.jpg"></div>
+						<div class="ad"><img src="images/slide4.jpg"></div>
+						<div class="ad"><img src="images/slide1.jpg"></div>
+						<div class="ad"><img src="images/slide2.jpg"></div>
+						<div class="ad"><img src="images/slide3.jpg"></div>
+						<div class="ad"><img src="images/slide4.jpg"></div>
+						<div class="ad"><img src="images/slide1.jpg"></div>
+						<div class="ad"><img src="images/slide2.jpg"></div>
+				</div>	
+				
+				<div id="slide2">
+						<div class="ad"><img src="images/slide1.jpg"></div>
+						<div class="ad"><img src="images/slide2.jpg"></div>
+						<div class="ad"><img src="images/slide3.jpg"></div>
+						<div class="ad"><img src="images/slide4.jpg"></div>
+						<div class="ad"><img src="images/slide1.jpg"></div>
+						<div class="ad"><img src="images/slide2.jpg"></div>
+						<div class="ad"><img src="images/slide3.jpg"></div>
+						<div class="ad"><img src="images/slide4.jpg"></div>
+						<div class="ad"><img src="images/slide1.jpg"></div>
+						<div class="ad"><img src="images/slide2.jpg"></div>
+				</div>
+			</div>
+		</div><!-- end adbelt wrapper -->
+		
+		<div class="code">
+			<h3>HTML Markup</h3>
+			<p>
+				For the html all you will need is a wrapper element and child elements that will act as the slides.
+				The parent element could be a div or a ul tag. The child elements could be a div, however if you are
+				using ul tags for the parent then you could substitute the child tags as li tags. 
+			</p>
+			<pre>
+				<code>
+					&lt;div id="slide1"&gt;
+						&lt;div class="ad"&gt;&lt;img src="images/slide1.jpg"&gt;&lt;/div&gt;
+						&lt;div class="ad"&gt;&lt;img src="images/slide2.jpg"&gt;&lt;/div&gt;
+						&lt;div class="ad"&gt;&lt;img src="images/slide3.jpg"&gt;&lt;/div&gt;
+						&lt;div class="ad"&gt;&lt;img src="images/slide4.jpg"&gt;&lt;/div&gt;
+						&lt;div class="ad"&gt;&lt;img src="images/slide1.jpg"&gt;&lt;/div&gt;
+						&lt;div class="ad"&gt;&lt;img src="images/slide2.jpg"&gt;&lt;/div&gt;
+						&lt;div class="ad"&gt;&lt;img src="images/slide3.jpg"&gt;&lt;/div&gt;
+						&lt;div class="ad"&gt;&lt;img src="images/slide4.jpg"&gt;&lt;/div&gt;
+						&lt;div class="ad"&gt;&lt;img src="images/slide1.jpg"&gt;&lt;/div&gt;
+						&lt;div class="ad"&gt;&lt;img src="images/slide2.jpg"&gt;&lt;/div&gt;
+					&lt;/div&gt;
+				</code>
+			</pre>
+		</div>
+		<div class="code">
+			<h3>Options</h3>
+			<pre>
+				slide_parent : "#slider1", 		// Accepts the id of the parent element that contains the slides
+				height : 300, 				// Specifies the height of inner sliders
+				width : 800, 				// Specifies the width of inner sliders
+				slides_shown : 1, 			// The amount of slides you want to show at one time. 
+						             		// In this case only one slide will show at once on each rotation
+				automatic : true		    	// Determines if slider will automatically rotate
+				speed : 4000				// Accepts the amount of seconds that slider will rotate
+				controls : true, 			// Determines if controller will be included
+				control_prev : 'prev_arrow.png', 	// Specifies the file name of the previous button image
+				control_next : 'next_arrow.png', 	// Specifies the file name of the next button image
+				control_image_path : 'images/', 	// Contains the image path
+			</pre>
+		</div>
+		
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script src="js/flex_slider.js"></script>
+        <script>
+        	var slider1 = new flex_slider({
+        		slide_parent : "#slide1",
+        		height : 300,
+        		width : 800,
+        		slides_shown : 1,
+        		controls : true,
+        		control_prev : 'prev_arrow.png',
+        		control_next : 'next_arrow.png',
+        		control_image_path : 'images/'
+        	});
+        	
+        	var slider2 = new flex_slider({
+        		slide_parent : "#slide2",
+        		height : 95,
+        		width : 200,
+        		slides_shown : 3,
+        		controls : true,
+        		control_prev : 'prev_arrow.png',
+        		control_next : 'next_arrow.png',
+        		control_image_path : 'images/'
+        	});
+        	
+        </script>
+    </body>
+</html>

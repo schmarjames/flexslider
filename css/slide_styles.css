@@ -1,0 +1,150 @@
+@import url(http://fonts.googleapis.com/css?family=Nixie+One);
+
+#title {
+	width: 200px;
+	margin: 10px auto;	
+	text-align: center;
+}
+
+#title h3 {
+	font-family: 'Nixie One', cursive;
+}
+
+#container {
+	width: 1000px;
+	margin: 0 auto;
+}
+
+#slide1 {
+	margin: 10px auto;
+	clear: both;
+	position: relative;
+	border: 3px solid #666;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+        	
+#slide1 .ad {
+	overflow: hidden;
+}
+        	
+#slide1 .ad img {
+    width: 100%;
+}
+        	
+#slide1_prev {
+	width: 35px;
+	height: 60px;
+	position: absolute;
+	left: 0;
+	bottom: 40%;
+	background: #666;
+	overflow: hidden;
+	cursor: pointer;
+	transition: all .5s;
+}
+        	
+#slide1_next {
+	width: 35px;
+	height: 60px;
+	position: absolute;
+	right: 0;
+	bottom: 40%;
+	background: #666;
+	overflow: hidden;
+	cursor: pointer;
+	transition: all .5s;
+}
+
+#slide1_prev img,
+#slide1_next img {
+	width: 85%;
+}
+
+#slide1_prev:hover {
+	left: -10px;
+}
+
+#slide1_next:hover {
+	right: -10px;
+}
+        	
+#slide2 {
+	margin: 10px auto;
+    position: relative;
+    clear: both;
+	border: 3px solid #666;
+	border-radius: 10px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+        	
+#slide2 .ad {
+    margin: 0;
+	overflow: hidden;
+}
+        	
+#slide2 .ad img {
+    width: 100%;
+}
+        	
+#slide2_prev {
+    width: 24px;
+	height: 40px;
+	position: absolute;
+	left: 0;
+	bottom: 28%;
+	background: #666;
+	overflow: hidden;
+	cursor: pointer;
+	transition: all .5s;
+}
+        	
+#slide2_next {
+    width: 24px;
+	height: 40px;
+	position: absolute;
+	right: 0;
+	bottom: 28%;
+	background: #666;
+	overflow: hidden;
+	cursor: pointer;
+	transition: all .5s;
+}
+
+#slide2_prev img,
+#slide2_next img {
+	width: 85%;
+}
+
+#slide2_prev:hover {
+	left: -10px;
+}
+
+#slide2_next:hover {
+	right: -10px;
+}
+
+.code {
+	width: 1200px;
+	margin: 10px auto;
+	padding: 10px;
+	background: #333;
+	color: #ffffff;
+}
+
+.code h3 {
+	width: 200px;
+	margin: 0 auto;
+	background: #333;
+	font-family: 'Nixie One', cursive;
+}
+
+.code p {
+	font-family: 'Arial';
+	font-size: 12px;
+	font-weight: normal;
+	text-align: center;
+	letter-spacing: 1px;
+}
